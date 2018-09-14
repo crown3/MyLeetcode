@@ -1,3 +1,8 @@
+![](./problem.png)
+
+## JS
+
+```JS
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -13,3 +18,6 @@ var twoSum = function(nums, target) {
     indexTable[nums[i]] = i
   }
 }
+```
+
+![](./result-js.png)
