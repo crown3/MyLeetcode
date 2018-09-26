@@ -1,6 +1,9 @@
 const {resolve} = require('path')
 
 module.exports = {
+  // CI
+  dest: 'gh-pages',
+  base: '/MyLeetcode/',
   // base setting
   title: "Crown's Leetcode",
   description: 'My Leetcode solutions which use js & go',
