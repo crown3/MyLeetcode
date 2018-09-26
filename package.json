@@ -6,6 +6,7 @@
   "author": "crown <chenjuncrown@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "echo 'No tests currently...' && exit 0",
     "docs": "vuepress dev algorithms",
     "docs:build": "vuepress build algorithms"
   },
