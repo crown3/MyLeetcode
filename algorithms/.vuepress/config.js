@@ -1,4 +1,5 @@
-const {resolve} = require('path')
+const { resolve } = require('path')
+const sidebarArr = require('./generateSidebar')
 
 module.exports = {
   // CI
@@ -6,14 +7,14 @@ module.exports = {
   base: '/MyLeetcode/',
   // base setting
   title: "Crown's Leetcode",
-  description: 'My Leetcode solutions which use js & go',
+  description: 'My Leetcode solutions with js & go',
   serviceWorker: true,
-  head: [['link', {rel: 'icon', href: `/favicon.png`}]],
+  head: [['link', { rel: 'icon', href: `/favicon.png` }]],
   // Set to true if you are only targeting evergreen browsers
   evergreen: true,
   // custom markdown setting
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
   chainWebpack: (config, isServer) => {
     // Image Compression
@@ -26,6 +27,6 @@ module.exports = {
   },
   // custom theme config
   themeConfig: {
-    sidebar: ['/', '/0001/']
-  }
+    sidebar: sidebarArr,
+  },
 }

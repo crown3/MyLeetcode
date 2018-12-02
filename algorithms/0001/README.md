@@ -10,6 +10,7 @@ Given an array of integers, return indices of the two numbers such that they add
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 Example:
+
 ```
 Given nums = [2, 7, 11, 15], target = 9,
 
@@ -21,10 +22,10 @@ return [0, 1].
 
 <<< @/algorithms/0001/main.js
 
-![](03-10.png)
+![](https://ws1.sinaimg.cn/large/006tNbRwly1fxsfbvaa7aj31pa0u0jv1.jpg)
 
 ## Go
 
 <<< @/algorithms/0001/main.go
 
-![](00-44.png)
+![](https://ws3.sinaimg.cn/large/006tNbRwly1fxsfdaaiuij31sm0u0dj8.jpg)
