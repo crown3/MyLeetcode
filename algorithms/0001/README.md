@@ -22,10 +22,6 @@ return [0, 1].
 
 <<< @/algorithms/0001/main.js
 
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fxsfbvaa7aj31pa0u0jv1.jpg)
-
 ## Go
 
 <<< @/algorithms/0001/main.go
-
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fxsfdaaiuij31sm0u0dj8.jpg)
