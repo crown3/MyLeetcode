@@ -3,8 +3,7 @@ const sidebarArr = require('./generateSidebar')
 
 module.exports = {
   // CI
-  dest: 'gh-pages',
-  base: '/MyLeetcode/',
+  dest: 'dist',
   // base setting
   title: "Crown's Leetcode",
   description: 'My Leetcode solutions with js & go',

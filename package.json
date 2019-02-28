@@ -1,19 +1,49 @@
 {
-  "name": "my-leet-code",
+  "name": "my-leetcode",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:crown3/MyLeetcode.git",
   "author": "crown <chenjuncrown@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "echo 'No tests currently...' && exit 0",
+    "cz": "git-cz",
     "docs": "vuepress dev algorithms",
-    "docs:build": "vuepress build algorithms"
+    "docs:build": "vuepress build algorithms",
+    "test:js": "jest",
+    "lint:js": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm-run-all test:js lint:js"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": [
+      "eslint . --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "vuepress": "^0.14.4"
   },
   "devDependencies": {
-    "image-webpack-loader": "^4.3.1"
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "commitizen": "^3.0.7",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^1.3.1",
+    "image-webpack-loader": "^4.3.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.4",
+    "netlify-cli": "^2.8.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4",
+    "semantic-release": "^15.13.3"
   }
 }

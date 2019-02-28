@@ -1,0 +1,84 @@
+version: 2
+
+defaults: &defaults
+  docker:
+    - image: circleci/node:11
+  working_directory: ~/repo/algorithm
+
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-algorithm-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - v1-algorithm-{{ .Branch }}-
+            - v1-algorithm-
+      - run: yarn install
+      - save_cache:
+          key: v1-algorithm-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - algorithm
+
+  test-js:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: yarn test:js
+
+  test-go:
+    docker:
+      - image: circleci/golang:1.12
+    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
+    steps:
+      - checkout
+      - run: go get -v -t -d ./...
+      - run: go test -v ./...
+
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - checkout
+      - run: npx semantic-release
+
+  generateStaticSite:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: yarn docs:build
+      - run: npx netlify deploy --dir=dist --prod
+
+workflows:
+  version: 2
+  test_then_deploy:
+    jobs:
+      - install
+      - test-js:
+          requires:
+            - install
+      - test-go:
+          requires:
+            - install
+      - release:
+          requires:
+            - test-js
+            - test-go
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - test-js
+            - test-go
+          filters:
+            branches:
+              only: master
