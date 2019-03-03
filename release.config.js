@@ -8,7 +8,12 @@ module.exports = {
         changelogFile: '.github/CHANGELOG.md',
       },
     ],
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false,
+      },
+    ],
     [
       '@semantic-release/git',
       {

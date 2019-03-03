@@ -75,7 +75,7 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy:
+      - generateStaticSite:
           requires:
             - test-js
             - test-go
