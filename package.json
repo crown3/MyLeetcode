@@ -10,11 +10,12 @@
     "docs": "vuepress dev algorithms",
     "docs:build": "vuepress build algorithms",
     "test:js": "jest",
+    "test:go": "go test -v ./...",
     "lint:js": "lint-staged"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all test:js lint:js"
+      "pre-commit": "npm-run-all test:js test:go lint:js"
     }
   },
   "lint-staged": {
