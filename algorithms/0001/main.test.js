@@ -1,5 +1,8 @@
 const twoSum = require('./main')
 
-test('nums = [2, 7, 11, 15], target = 9, return [0, 1]', () => {
-  expect(twoSum([2, 7, 11, 15], 9)).toEqual([0, 1])
-})
+test.each([[[2, 7, 11, 15], 9, [0, 1]], [[1, 3, 5], 8, [1, 2]]])(
+  '.twoSum(%p, %i)',
+  (a, b, expected) => {
+    expect(twoSum(a, b)).toEqual(expected)
+  }
+)
