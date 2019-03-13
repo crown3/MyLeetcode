@@ -35,7 +35,7 @@ jobs:
   test-go:
     docker:
       - image: circleci/golang:1.12
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
+    working_directory: /go/src/github.com/crown3/MyLeetcode
     steps:
       - checkout
       - run: go get -v -t -d ./...
