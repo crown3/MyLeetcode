@@ -1,3 +1,21 @@
+# [1.2.0](https://github.com/crown3/MyLeetcode/compare/v1.1.0...v1.2.0) (2019-03-13)
+
+
+### Features
+
+* **p0004:** solve the problem ([ed7c883](https://github.com/crown3/MyLeetcode/commit/ed7c883))
+* **p0005:** resolve the problem ([aad797b](https://github.com/crown3/MyLeetcode/commit/aad797b))
+* **p0006:** resolve the problem ([c4530fb](https://github.com/crown3/MyLeetcode/commit/c4530fb))
+* **p0007:** resolve the problem ([3727983](https://github.com/crown3/MyLeetcode/commit/3727983))
+* **p0008,0009:** resolve the problems ([c4f2368](https://github.com/crown3/MyLeetcode/commit/c4f2368))
+* **p0010:** resolve the problem ([56b6fa4](https://github.com/crown3/MyLeetcode/commit/56b6fa4))
+* **p0011:** resolve the problem ([f685638](https://github.com/crown3/MyLeetcode/commit/f685638))
+* **p0012:** resolve the problem ([ceaee76](https://github.com/crown3/MyLeetcode/commit/ceaee76))
+* **p0013:** resolve the problem ([7b06914](https://github.com/crown3/MyLeetcode/commit/7b06914))
+* **p0014:** resolve the problem ([4fdd42a](https://github.com/crown3/MyLeetcode/commit/4fdd42a))
+* **p0015:** resolve the problem ([9da9ad1](https://github.com/crown3/MyLeetcode/commit/9da9ad1))
+* **p0016:** resolve the problem ([787f548](https://github.com/crown3/MyLeetcode/commit/787f548))
+
 # [1.1.0](https://github.com/crown3/MyLeetcode/compare/v1.0.0...v1.1.0) (2019-03-03)
 
 
