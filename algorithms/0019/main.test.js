@@ -10,12 +10,6 @@ const generateList = arr => {
   return emptyNode.next
 }
 
-test('should ', () => {
-  expect(removeNthFromEnd(generateList([1, 2, 3, 4, 5]), 2)).toEqual(
-    generateList([1, 2, 3, 5])
-  )
-})
-
 test.each([[[1, 2, 3, 4, 5], 2, [1, 2, 3, 5]], [[1, 2], 2, [2]], [[1], 1, []]])(
   '.removeNthFromEnd(%p, %d)',
   (a, b, expected) => {
