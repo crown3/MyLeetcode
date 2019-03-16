@@ -1,9 +1,5 @@
 const isValid = require('./main')
 
-test('should ', () => {
-  expect(isValid('{[]}')).toBe(true)
-})
-
 test.each([
   ['()', true],
   ['()[]{}', true],
