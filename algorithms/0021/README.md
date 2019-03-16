@@ -1,56 +1,21 @@
 ---
-title: 20. Valid Parentheses
+title: 21. Merge Two Sorted Lists
 sidebarDepth: 0
 ---
 
-Given a string containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
-An input string is valid if:
-
-1. Open brackets must be closed by the same type of brackets.
-2. Open brackets must be closed in the correct order.
-
-Note that an empty string is also considered valid.
-
-**Example 1:**
+**Example:**
 
 ```
-Input: "()"
-Output: true
-```
-
-**Example 2:**
-
-```
-Input: "()[]{}"
-Output: true
-```
-
-**Example 3:**
-
-```
-Input: "(]"
-Output: false
-```
-
-**Example 4:**
-
-```
-Input: "([)]"
-Output: false
-```
-
-**Example 5:**
-
-```
-Input: "{[]}"
-Output: true
+Input: 1->2->4, 1->3->4
+Output: 1->1->2->3->4->4
 ```
 
 ## JS
 
-<< @/algorithms/0020/main.js
+<< @/algorithms/0021/main.js
 
 ## Go
 
-<< @/algorithms/0020/main.go
+<< @/algorithms/0021/main.go
