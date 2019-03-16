@@ -1,10 +1,9 @@
 package p0019
 
+import "../../kit"
+
 // ListNode Definition for singly-linked list
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+type ListNode = kit.ListNode
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	emptyNode := &ListNode{}

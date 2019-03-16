@@ -1,8 +1,4 @@
-// Definition for singly-linked list.
-function ListNode(val) {
-  this.val = val
-  this.next = null
-}
+const { ListNode } = require('../../kit/ListNode')
 /**
  * @param {ListNode} head
  * @param {number} n
@@ -27,5 +23,4 @@ var removeNthFromEnd = function(head, n) {
   return emptyNode.next
 }
 
-exports.ListNode = ListNode
-exports.removeNthFromEnd = removeNthFromEnd
+module.exports = removeNthFromEnd

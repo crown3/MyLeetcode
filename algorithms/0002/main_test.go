@@ -3,17 +3,11 @@ package p0002
 import (
 	"reflect"
 	"testing"
+
+	"../../kit"
 )
 
-func generateList(arr []int) *ListNode {
-	emptyNode := &ListNode{}
-	current := emptyNode
-	for _, val := range arr {
-		emptyNode.Next = &ListNode{Val: val}
-		emptyNode = emptyNode.Next
-	}
-	return current.Next
-}
+var Ints2List = kit.Ints2List
 
 func Test_addTwoNumbers(t *testing.T) {
 	type args struct {
@@ -25,9 +19,9 @@ func Test_addTwoNumbers(t *testing.T) {
 		args args
 		want *ListNode
 	}{
-		{"Case 1", args{l1: generateList([]int{2, 4, 3}), l2: generateList([]int{5, 6, 4})}, generateList([]int{7, 0, 8})},
-		{"Case 2", args{l1: generateList([]int{9, 1}), l2: generateList([]int{1, 8, 9})}, generateList([]int{0, 0, 0, 1})},
-		{"Case 3", args{l1: generateList([]int{0, 0, 1}), l2: generateList([]int{})}, generateList([]int{0, 0, 1})},
+		{"Case 1", args{l1: Ints2List([]int{2, 4, 3}), l2: Ints2List([]int{5, 6, 4})}, Ints2List([]int{7, 0, 8})},
+		{"Case 2", args{l1: Ints2List([]int{9, 1}), l2: Ints2List([]int{1, 8, 9})}, Ints2List([]int{0, 0, 0, 1})},
+		{"Case 3", args{l1: Ints2List([]int{0, 0, 1}), l2: Ints2List([]int{})}, Ints2List([]int{0, 0, 1})},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
