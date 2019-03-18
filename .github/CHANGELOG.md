@@ -1,3 +1,17 @@
+# [1.5.0](https://github.com/crown3/MyLeetcode/compare/v1.4.0...v1.5.0) (2019-03-18)
+
+
+### Features
+
+* **p0025:** resolve ([9671e03](https://github.com/crown3/MyLeetcode/commit/9671e03))
+* **p0026:** resolve ([a68bd55](https://github.com/crown3/MyLeetcode/commit/a68bd55))
+* **p0027:** resolve ([eab48fc](https://github.com/crown3/MyLeetcode/commit/eab48fc))
+* **p0028:** resolve ([f34904f](https://github.com/crown3/MyLeetcode/commit/f34904f))
+* **p0029:** resolve ([3281c73](https://github.com/crown3/MyLeetcode/commit/3281c73))
+* **p0030:** resolve ([e5f6403](https://github.com/crown3/MyLeetcode/commit/e5f6403))
+* **p0032:** resolve ([61dcc1c](https://github.com/crown3/MyLeetcode/commit/61dcc1c))
+* **p0033:** resolve ([d413ebf](https://github.com/crown3/MyLeetcode/commit/d413ebf))
+
 # [1.4.0](https://github.com/crown3/MyLeetcode/compare/v1.3.0...v1.4.0) (2019-03-18)
 
 
