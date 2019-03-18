@@ -6,7 +6,16 @@ defaults: &defaults
   working_directory: ~/repo/algorithm
 
 jobs:
-  install:
+  test-go:
+    docker:
+      - image: circleci/golang:1.12
+    working_directory: ~/repo/algorithm
+    steps:
+      - checkout
+      - run: go get -v -t -d ./...
+      - run: go test -v ./...
+
+  install-js:
     <<: *defaults
     steps:
       - checkout
@@ -32,15 +41,6 @@ jobs:
           at: ~/repo
       - run: yarn test:js
 
-  test-go:
-    docker:
-      - image: circleci/golang:1.12
-    working_directory: ~/repo/algorithm
-    steps:
-      - checkout
-      - run: go get -v -t -d ./...
-      - run: go test -v ./...
-
   release:
     <<: *defaults
     steps:
@@ -61,13 +61,11 @@ workflows:
   version: 2
   test_then_deploy:
     jobs:
-      - install
+      - test-go
+      - install-js
       - test-js:
           requires:
-            - install
-      - test-go:
-          requires:
-            - install
+            - install-js
       - release:
           requires:
             - test-js
