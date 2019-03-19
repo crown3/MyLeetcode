@@ -22,8 +22,8 @@ Although the above answer is in lexicographical order, your answer could be in a
 
 ## JS
 
-<< @/algorithms/0017/main.js
+<<< @/algorithms/0017/main.js
 
 ## Go
 
-<< @/algorithms/0017/main.go
+<<< @/algorithms/0017/main.go

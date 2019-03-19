@@ -23,8 +23,8 @@ Explanation: The longest valid parentheses substring is "()()"
 
 ## JS
 
-<< @/algorithms/0032/main.js
+<<< @/algorithms/0032/main.js
 
 ## Go
 
-<< @/algorithms/0032/main.go
+<<< @/algorithms/0032/main.go

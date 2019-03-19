@@ -49,8 +49,8 @@ Output: true
 
 ## JS
 
-<< @/algorithms/0020/main.js
+<<< @/algorithms/0020/main.js
 
 ## Go
 
-<< @/algorithms/0020/main.go
+<<< @/algorithms/0020/main.go

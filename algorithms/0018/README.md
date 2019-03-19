@@ -24,8 +24,8 @@ A solution set is:
 
 ## JS
 
-<< @/algorithms/0018/main.js
+<<< @/algorithms/0018/main.js
 
 ## Go
 
-<< @/algorithms/0018/main.go
+<<< @/algorithms/0018/main.go

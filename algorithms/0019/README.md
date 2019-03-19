@@ -23,8 +23,8 @@ Could you do this in one pass?
 
 ## JS
 
-<< @/algorithms/0019/main.js
+<<< @/algorithms/0019/main.js
 
 ## Go
 
-<< @/algorithms/0019/main.go
+<<< @/algorithms/0019/main.go

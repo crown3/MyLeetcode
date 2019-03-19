@@ -31,8 +31,8 @@ Output: -2
 
 ## JS
 
-<< @/algorithms/0029/main.js
+<<< @/algorithms/0029/main.js
 
 ## Go
 
-<< @/algorithms/0029/main.go
+<<< @/algorithms/0029/main.go

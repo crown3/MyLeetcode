@@ -29,8 +29,8 @@ For the purpose of this problem, we will return 0 when `needle` is an empty st
 
 ## JS
 
-<< @/algorithms/0028/main.js
+<<< @/algorithms/0028/main.js
 
 ## Go
 
-<< @/algorithms/0028/main.go
+<<< @/algorithms/0028/main.go

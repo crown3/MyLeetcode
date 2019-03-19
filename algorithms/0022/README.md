@@ -22,8 +22,8 @@ For example, given *n* = 3, a solution set is:
 
 ## JS
 
-<< @/algorithms/0022/main.js
+<<< @/algorithms/0022/main.js
 
 ## Go
 
-<< @/algorithms/0022/main.go
+<<< @/algorithms/0022/main.go

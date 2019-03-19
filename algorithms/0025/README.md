@@ -22,8 +22,8 @@ For *k* = 3, you should return: `3->2->1->4->5`
 
 ## JS
 
-<< @/algorithms/0025/main.js
+<<< @/algorithms/0025/main.js
 
 ## Go
 
-<< @/algorithms/0025/main.go
+<<< @/algorithms/0025/main.go

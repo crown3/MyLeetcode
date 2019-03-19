@@ -52,8 +52,8 @@ for (int i = 0; i < len; i++) {
 
 ## JS
 
-<< @/algorithms/0027/main.js
+<<< @/algorithms/0027/main.js
 
 ## Go
 
-<< @/algorithms/0027/main.go
+<<< @/algorithms/0027/main.go

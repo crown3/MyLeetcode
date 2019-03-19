@@ -19,8 +19,8 @@ Output: 1->1->2->3->4->4->5->6
 
 ## JS
 
-<< @/algorithms/0023/main.js
+<<< @/algorithms/0023/main.js
 
 ## Go
 
-<< @/algorithms/0023/main.go
+<<< @/algorithms/0023/main.go

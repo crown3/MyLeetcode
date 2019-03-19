@@ -29,8 +29,8 @@ Output: []
 
 ## JS
 
-<< @/algorithms/0030/main.js
+<<< @/algorithms/0030/main.js
 
 ## Go
 
-<< @/algorithms/0030/main.go
+<<< @/algorithms/0030/main.go

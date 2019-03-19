@@ -17,8 +17,8 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 ## JS
 
-<< @/algorithms/0031/main.js
+<<< @/algorithms/0031/main.js
 
 ## Go
 
-<< @/algorithms/0031/main.go
+<<< @/algorithms/0031/main.go

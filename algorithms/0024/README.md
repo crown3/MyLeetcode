@@ -15,8 +15,8 @@ Given 1->2->3->4, you should return the list as 2->1->4->3
 
 ## JS
 
-<< @/algorithms/0024/main.js
+<<< @/algorithms/0024/main.js
 
 ## Go
 
-<< @/algorithms/0024/main.go
+<<< @/algorithms/0024/main.go
