@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/crown3/MyLeetcode/compare/v1.5.0...v1.6.0) (2019-03-19)
+
+
+### Features
+
+* **p0034:** resolve ([5a3b209](https://github.com/crown3/MyLeetcode/commit/5a3b209))
+
 # [1.5.0](https://github.com/crown3/MyLeetcode/compare/v1.4.0...v1.5.0) (2019-03-18)
 
 
