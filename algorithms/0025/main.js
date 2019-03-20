@@ -34,10 +34,7 @@ function reverse(head, tail) {
   let curPre = head
   let cur = head.next
   while (cur !== null) {
-    let tmp = curPre
-    curPre = cur
-    cur = cur.next
-    cur.next = tmp
+    ;[curPre, cur, cur.next] = [cur, cur.next, curPre]
   }
   return [tail, head]
 }
