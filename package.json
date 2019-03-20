@@ -1,6 +1,6 @@
 {
   "name": "my-leetcode",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "main": "index.js",
   "repository": "git@github.com:crown3/MyLeetcode.git",
   "author": "crown <chenjuncrown@gmail.com>",
